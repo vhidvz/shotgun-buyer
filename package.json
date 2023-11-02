@@ -11,16 +11,16 @@
   "repository": "https://github.com/vhidvz/shotgun-buyer",
   "author": "Vahid V. <vhid.vz@gmail.com>",
   "devDependencies": {
-    "electron": "^18.2.0",
-    "electron-builder": "^23.0.3"
+    "electron": "^27.0.3",
+    "electron-builder": "^24.6.4"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "chromedriver": "^101.0.0",
+    "axios": "^1.6.0",
+    "chromedriver": "^119.0.0",
     "ntp-client": "^0.5.3",
-    "ping": "^0.4.2",
-    "selenium-webdriver": "^4.1.2",
-    "uuid": "^8.3.2"
+    "ping": "^0.4.4",
+    "selenium-webdriver": "^4.15.0",
+    "uuid": "^9.0.1"
   },
   "build": {
     "appId": "shotgun.vhid.vz",

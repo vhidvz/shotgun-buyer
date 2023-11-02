@@ -9,13 +9,6 @@
     "dist": "electron-builder"
   },
   "repository": "https://github.com/vhidvz/shotgun-buyer",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
   "author": "Vahid V. <vhid.vz@gmail.com>",
   "devDependencies": {
     "electron": "^18.2.0",

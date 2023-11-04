@@ -17,9 +17,9 @@ module.exports.default = {
     const { symbols: instruments } = JSON.parse(driver.localStorage.symbols);
     for (const instrument of instruments) {
       if (
-        instrument.searchOptimizeTitle.includes(name) ||
-        instrument.symbolName.includes(name) ||
-        instrument.title.includes(name)
+        instrument.searchOptimizeTitle?.includes(name) ||
+        instrument.symbolName?.includes(name) ||
+        instrument.title?.includes(name)
       ) {
         return instrument;
       }

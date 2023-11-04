@@ -9,13 +9,9 @@ const configs = {
   ntpPool: 'ir.pool.ntp.org',
   pingMinReply: 10,
   brokers: {
-    exirbroker: require('./brokers/exirbroker').default,
-    mofidonline: require('./brokers/mofidonline').default,
     easytrader: require('./brokers/easytrader').default,
   },
   drivers: {
-    exirbroker: {},
-    mofidonline: {},
     easytrader: {},
   }
 }

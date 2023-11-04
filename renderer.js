@@ -18,8 +18,6 @@ const configs = {
 }
 
 const brokers = {
-  exirbroker: 'اقتصاد بیدار',
-  mofidonline: 'مفید (آنلاین پلاس)',
   easytrader: 'مفید (ایزی تریدر)',
 }
 
@@ -138,7 +136,6 @@ const appContainer = new Vue({
       return this.isAccountLoggedIn && /^\d+$/.test(stock.count) && /^\d+$/.test(stock.price) && stock.symbol != ''
     },
     isValidInstrument: function () {
-      const stock = this.store.state.stock
       return Object.keys(this.store.state.instrumentData).length != 0 && this.isValidStock
     },
     isAccountLoggedIn: function () {
@@ -183,8 +180,6 @@ api.receive('fromShotgun', (data) => {
     store.state.logs.push('[' + store.state.time + '] ' + data.message)
     return;
   }
-
-  // clearTimeout(sendTimeout)
 
   if (data.status !== 200) {
     store.state.logs.push('[' + store.state.time + '] ' + data.message)

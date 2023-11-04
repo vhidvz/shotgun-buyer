@@ -16,17 +16,19 @@
 ![](assets/screenshots/04.png)
 ![](assets/screenshots/05.png)
 
-## To Use
+## Start Guide
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Clone this repository whit [Git](https://git-scm.com) then, install [NodeJS](https://nodejs.org/en/download/) (which has [npm](http://npmjs.com)), you should install prerequisites after NodeJS by command `npm i -g pnpm ncu` with admin or root privilege.
 
 ```bash
 # Clone this repository
 git clone https://github.com/vhidvz/shotgun-buyer
 # Go into the repository
 cd shotgun-buyer
+# update package.json deps
+ncu -u
 # Install dependencies
-npm install
+pnpm install
 # Run the app
-npm start
+pnpm start
 ```

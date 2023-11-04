@@ -18,7 +18,7 @@
 
 ## Start Guide
 
-Clone this repository whit [Git](https://git-scm.com) then, install [NodeJS](https://nodejs.org/en/download/) (which has [npm](http://npmjs.com)), you should install prerequisites after NodeJS by command `npm i -g pnpm ncu` with admin or root privilege.
+Clone this repository whit [Git](https://git-scm.com) then, install [NodeJS](https://nodejs.org/en/download/) (which has [npm](http://npmjs.com)), you should install prerequisites after NodeJS by command `npm i -g pnpm npm-check-updates` with admin or root privilege.
 
 ```bash
 # Clone this repository

@@ -33,8 +33,8 @@ module.exports.default = {
     const payload = {
       order: {
         symbolIsin: instrument.symbolIsin,
-        price: parseInt(data.count),
-        quantity: parseInt(data.price),
+        price: parseInt(data.price),
+        quantity: parseInt(data.count),
         side: 0,
         validityType: 0,
         validityDate: jalaliDate,
@@ -51,6 +51,14 @@ module.exports.default = {
         headers: {
           'Content-Type': 'application/json',
           Authorization: 'Bearer ' + accessToken,
+          Host: 'api-mts.orbis.easytrader.ir',
+          Origin: 'https://d.orbis.easytrader.ir',
+          Referer: 'https://d.orbis.easytrader.ir/',
+          'Sec-Fetch-Dest': 'empty',
+          'Sec-Fetch-Mode': 'cors',
+          'Sec-Fetch-Site': 'same-site',
+          'User-Agent':
+            'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
         },
       })
       .then(({ data }) => {
@@ -73,8 +81,8 @@ module.exports.default = {
     const payload = {
       order: {
         symbolIsin: instrument.symbolIsin,
-        price: parseInt(data.count),
-        quantity: parseInt(data.price),
+        price: parseInt(data.price),
+        quantity: parseInt(data.count),
         side: 1,
         validityType: 0,
         validityDate: jalaliDate,
@@ -91,6 +99,11 @@ module.exports.default = {
         headers: {
           'Content-Type': 'application/json',
           Authorization: 'Bearer ' + accessToken,
+          'Sec-Fetch-Dest': 'empty',
+          'Sec-Fetch-Mode': 'cors',
+          'Sec-Fetch-Site': 'same-site',
+          'User-Agent':
+            'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
         },
       })
       .then(({ data }) => {
